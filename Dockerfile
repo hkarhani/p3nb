@@ -16,4 +16,4 @@ ADD jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
 
 EXPOSE 8888
 
-CMD /bin/sh -c "/usr/bin/jupyter notebook"
+CMD /bin/sh -c "/usr/bin/jupyter notebook --allow-root"

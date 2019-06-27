@@ -1,2 +1,4 @@
 pyzmq
 jupyter 
+PyYaml
+requests

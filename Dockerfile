@@ -2,8 +2,10 @@ FROM alpine:edge
 
 MAINTAINER Hassan El Karhani <hkarhani@gmail.com>
 
-RUN apk update && apk add build-base libzmq musl-dev python3 python3-dev zeromq-dev
+RUN apk update && apk add build-base libzmq musl-dev python3 python3-dev zeromq-dev py3-pip
+RUN apk add linux-headers zlib-dev jpeg-dev
 RUN pip3 install --upgrade pip
+RUN python -m pip install psutil
 
 RUN mkdir -p /notebooks
 
